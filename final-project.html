@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giant Panda 🐼</title>
+    <style>
+      body {
+        background-color: #faf7f0;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 50%;
+        border: 1.7px solid #632626;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      .about {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+      }
+      .protect {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 200;
+        margin: auto;
+      }
+      .coded-by {
+        text-align: center;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 16px;
+        opacity: 0.8;
+        padding: 15px;
+      }
+      .profile {
+        text-decoration: none;
+        font-weight: bold;
+        color: #105652;
+        opacity: auto;
+      }
+      .profile:hover {
+        color: #b91646;
+        font-weight: bold;
+      }
+      .liveTV {
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-family: Tahoma;
+        font-size: 16px;
+        color: #632626;
+        background: #f7ecde;
+        padding: 15px;
+        border: 1.5px solid #632626;
+        box-shadow: 5px 5px 4px 1px rgba(41, 64, 43, 0.2);
+        border-radius: 50px;
+        transition: all 100ms ease-in-out;
+        text-decoration: none;
+        width: 85px;
+      }
+      .newsletter {
+        margin: auto;
+        display: block;
+        font-weight: bold;
+        font-family: Tahoma;
+        font-size: 16px;
+        color: #632626;
+        background: #f7ecde;
+        padding: 15px;
+        border: 1.5px solid #632626;
+        box-shadow: 5px 5px 4px 1px rgba(41, 64, 43, 0.2);
+        border-radius: 50px;
+        transition: all 100ms ease-in-out;
+      }
+      .newsletter:hover {
+        background: #e9dac1;
+        cursor: pointer;
+        color: #105652;
+        border: 1.5px solid #105652;
+      }
+      .liveTV:hover {
+        background: #e9dac1;
+        cursor: pointer;
+        color: #105652;
+        border: 1.5px solid #105652;
+      }
+      .adoption {
+        text-decoration: none;
+        list-style: none;
+        color: #632626;
+      }
+      .adoption:hover {
+        color: #105652;
+      }
+      .wildlife {
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Giant Panda</h1>
+      <h3>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/104/original/6990634-panda-hug.jpeg?1667828606"
+          alt="giant-panda"
+        />
+      </h3>
+      <p class="about">
+        The giant panda, also known as the panda bear (or simply the panda), is
+        a bear species endemic to China. It is characterised by its bold
+        black-and-white coat and rotund body. The name "giant panda" is
+        sometimes used to distinguish it from the red panda, a
+        neighboring musteloid. Though it belongs to the order Carnivora, the
+        giant panda is a folivore, with bamboo shoots and leaves making up more
+        than 99% of its diet. Giant pandas in the wild occasionally eat other
+        grasses, wild tubers, or even meat in the form of birds, rodents, or
+        carrion. In captivity, they may receive honey, eggs, fish,
+        yams, shrub leaves, oranges, or bananas along with specially prepared
+        food.
+      </p>
+
+      <a href="https://en.ipanda.com/" target="_blank" class="liveTV">
+        Panda TV
+      </a>
+
+      <p class="protect">
+        In a welcome piece of good news for the world’s threatened wildlife, the
+        giant panda has just been downgraded from ‘Endangered’ to ‘Vulnerable’
+        on the global list of species at risk of extinction, demonstrating how
+        an integrated approach can help save our planet’s vanishing
+        biodiversity.
+        <br />
+        <br />
+      </p>
+      <p class="wildlife">
+        Help protect wildlife by
+        <a
+          href="https://gifts.worldwildlife.org/gift-center/gifts/species-adoptions/panda.aspx"
+          target="_blank"
+          class="adoption"
+        >
+          adopting
+        </a>
+        a Panda.
+      </p>
+      <button class="newsletter">Newsletter</button>
+    </div>
+    <hr />
+    <div class="coded-by">
+      Coded by
+      <a
+        href="https://instagram.com/martadlsnts?igshid=YmMyMTA2M2Y="
+        target="_blank"
+        class="profile"
+      >
+        Marta Delos Santos
+      </a>
+    </div>
+    <script>
+      function updateHeading(newHeading) {
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = newHeading;
+      }
+      function sendNewsletter() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+
+        updateHeading(`Thank you ${name}! We'll be in touch! 🐼`);
+      }
+
+      let changeButton = document.querySelector(".newsletter");
+      changeButton.addEventListener("click", sendNewsletter);
+    </script>
+  </body>
+</html>
